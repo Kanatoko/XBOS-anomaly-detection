@@ -1,3 +1,6 @@
+# Author: Kanatoko(https://twitter.com/kinyuka)
+# License: BSD 3 clause
+
 from sklearn.cluster import KMeans
 import numpy as np
 from pandas import DataFrame
