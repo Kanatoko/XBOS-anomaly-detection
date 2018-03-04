@@ -5,7 +5,7 @@ What is XBOS?
 -
 Cross interaction based outlier score (XBOS) is a cluster-based algorithm for **unsupervised anomaly detection**. It uses k-means clustering for the first stage, and then calculate cross interaction between clusters as the second stage. Because of this second stage, A small cluster near another large cluster is treated as if that is a middle cluster, so that the data points belong to the cluster is scored 'not so anomalous' as a result. 
 
-XBOS assumes independence of the features as same as [HBOS](https://www.dfki.de/KI2012/PosterDemoTrack/ki2012pd13.pdf). XBOS shows [very good performance on Kaggle credit card dataset](https://www.kaggle.com/) compared to [Isolation Forest](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html) and HBOS.
+XBOS assumes independence of the features as same as [HBOS](https://www.dfki.de/KI2012/PosterDemoTrack/ki2012pd13.pdf). XBOS shows [very good performance on Kaggle credit card dataset](https://www.kaggle.com/kanatoko/unsupervised-anomaly-detection-xbos-hbos-iforest) compared to [Isolation Forest](http://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html) and HBOS.
 
 ![kaggle1.png](https://raw.githubusercontent.com/Kanatoko/XBOS-anomaly-detection/master/images/kaggle1.png)
 
