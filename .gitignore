@@ -2,3 +2,4 @@ __pycache__
 run_xbos.py
 .pydevproject
 .project
+/xbos.pyc
