@@ -26,10 +26,10 @@ Create XBOS object and call 'fit_predict()'. Returning value is an array of anom
 Algorithm details
 -
 Consider one-dimensional data. The histogram looks like this.  
-![xbos1.png](https://raw.githubusercontent.com/Kanatoko/XBOS-anomaly-detection/master/xbos1.png)
+![xbos1.png](https://raw.githubusercontent.com/Kanatoko/XBOS-anomaly-detection/master/images/xbos1.png)
 
 We apply k-means clustering to the data(k=3), and get 3 clusters, C1/C2/C3.  
-![xbos2.png](https://raw.githubusercontent.com/Kanatoko/XBOS-anomaly-detection/master/xbos2.png)
+![xbos2.png](https://raw.githubusercontent.com/Kanatoko/XBOS-anomaly-detection/master/images/xbos2.png)
 
 C1 is large, C2 and c3 are small. So at this point, anomaly score of each clusters are considered as below.  
 ```
@@ -41,10 +41,10 @@ C3: abnormal
 Since C2 is close to C1, we want to think it is not as abnormal as C3.  
 So we calculate the interaction between clusters as red arrows as below.  
 
-![xbos3.png](https://raw.githubusercontent.com/Kanatoko/XBOS-anomaly-detection/master/xbos3.png)
+![xbos3.png](https://raw.githubusercontent.com/Kanatoko/XBOS-anomaly-detection/master/images/xbos3.png)
 
 The closer the clusters are to each other, and the larger the cluster, the stronger the interaction is.  
-![xbos4.png](https://raw.githubusercontent.com/Kanatoko/XBOS-anomaly-detection/master/xbos4.png)
+![xbos4.png](https://raw.githubusercontent.com/Kanatoko/XBOS-anomaly-detection/master/images/xbos4.png)
 
 C2 is strongly affected by C1 and the anomaly score of it has been changed to 'not so abnormal'. On the other hand, C3 is slightly affected by C1 and it still remains as 'abnormal'.  
 
