@@ -46,7 +46,6 @@ So we calculate the interaction between clusters as red arrows as below.
 ![xbos3.png](https://raw.githubusercontent.com/Kanatoko/XBOS-anomaly-detection/master/images/xbos3.png)
 
 The closer the clusters are to each other, and the larger the cluster, the stronger the interaction is.  
-![xbos4.png](https://raw.githubusercontent.com/Kanatoko/XBOS-anomaly-detection/master/images/xbos4.png)
 
 C2 is strongly affected by C1 and the anomaly score of it has been changed to 'not so abnormal'. On the other hand, C3 is slightly affected by C1 and it still remains as 'abnormal'.  
 
