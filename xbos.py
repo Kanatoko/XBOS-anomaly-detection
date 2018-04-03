@@ -1,5 +1,6 @@
 # Author: Kanatoko(https://twitter.com/kinyuka)
 # License: BSD 3 clause
+# for Python 3
 
 from sklearn.cluster import KMeans
 import numpy as np
