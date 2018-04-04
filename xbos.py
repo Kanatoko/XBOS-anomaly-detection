@@ -30,8 +30,8 @@ class XBOS:
             sorted_centers = sorted(kmeans.cluster_centers_)
             max_distance = ( sorted_centers[-1] - sorted_centers[0] )[ 0 ]
         
-            for i in range(self.n_clusters):
-                for k in range(self.n_clusters):
+            for i in range(len(cluster_score)):
+                for k in range(len(cluster_score)):
                     if i != k:
                         dist = abs(kmeans.cluster_centers_[i] - kmeans.cluster_centers_[k])/max_distance
                         effect = ratio[k]*(1/pow(self.effectiveness,dist))
